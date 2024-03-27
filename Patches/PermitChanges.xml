@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+  <Operation Class="PatchOperationAdd">
+	<xpath>/Defs/RoyalTitlePermitDef[defName="FoodDrop"]</xpath>
+	<value>
+		<cooldownDays>15</cooldownDays>
+	</value>
+  </Operation>
+	
+  <Operation Class="PatchOperationReplace">
+	<xpath>/Defs/RoyalTitlePermitDef[defName="FoodDrop"]/royalAid/favorCost</xpath>
+	<value>
+		<favorCost>3</favorCost>
+	</value>
+  </Operation>
+	
+  <Operation Class="PatchOperationReplace">
+	<xpath>/Defs/RoyalTitlePermitDef[defName="FoodDrop"]/uiPosition</xpath>
+	<value>
+		<uiPosition>(0,2)</uiPosition>
+	</value>
+   </Operation>
+
+  <Operation Class="PatchOperationReplace">
+	<xpath>/Defs/RoyalTitlePermitDef[defName="GlitterMedDrop"]/minTitle</xpath>
+	<value>
+		<minTitle>Praetor</minTitle>
+	</value>
+  </Operation>
+	
+  <Operation Class="PatchOperationReplace">
+	<xpath>/Defs/RoyalTitlePermitDef[defName="GlitterMedDrop"]/royalAid</xpath>
+	<value>
+		<royalAid>
+			<itemsToDrop>
+				<MedicineUltratech>10</MedicineUltratech>
+			</itemsToDrop>
+			<favorCost>5</favorCost>
+		</royalAid>
+	</value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+	<xpath>/Defs/RoyalTitlePermitDef[defName="GlitterMedDrop"]</xpath>
+	<value>
+		<cooldownDays>25</cooldownDays>
+	</value>
+  </Operation>
+	
+  <Operation Class="PatchOperationAdd">
+	<xpath>/Defs/RoyalTitlePermitDef[defName="GlitterMedDrop"]</xpath>
+	<value>
+		<prerequisite>MedicineIndDrop</prerequisite>
+	</value>
+  </Operation>
+	
+  <Operation Class="PatchOperationReplace">
+	<xpath>/Defs/RoyalTitlePermitDef[defName="GlitterMedDrop"]/uiPosition</xpath>
+	<value>
+		<uiPosition>(1,4)</uiPosition>
+	</value>
+  </Operation>
+  
+  <Operation Class="PatchOperationReplace">
+	<xpath>/Defs/RoyalTitlePermitDef[defName="SteelDrop"]/minTitle</xpath>
+	<value>
+		<minTitle>Yeoman</minTitle>
+	</value>
+  </Operation>
+ 
+  <Operation Class="PatchOperationAdd">
+	<xpath>/Defs/RoyalTitlePermitDef[defName="SteelDrop"]</xpath>
+	<value>
+		<cooldownDays>10</cooldownDays>
+	</value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+	<xpath>/Defs/RoyalTitlePermitDef[defName="SteelDrop"]/uiPosition</xpath>
+	<value>
+		<uiPosition>(2,1)</uiPosition>
+	</value>
+  </Operation>
+	
+  <Operation Class="PatchOperationReplace">
+	<xpath>/Defs/RoyalTitlePermitDef[defName="SilverDrop"]/minTitle</xpath>
+	<value>
+		<minTitle>Acolyte</minTitle>
+	</value>
+  </Operation>
+	
+  <Operation Class="PatchOperationReplace">
+	<xpath>/Defs/RoyalTitlePermitDef[defName="SilverDrop"]/royalAid/favorCost</xpath>
+	<value>
+		<favorCost>3</favorCost>
+	</value>
+  </Operation>
+	
+  <Operation Class="PatchOperationAdd">
+	<xpath>/Defs/RoyalTitlePermitDef[defName="SilverDrop"]</xpath>
+	<value>
+		<cooldownDays>15</cooldownDays>
+	</value>
+  </Operation>
+	
+  <Operation Class="PatchOperationReplace">
+	<xpath>/Defs/RoyalTitlePermitDef[defName="SilverDrop"]/uiPosition</xpath>
+	<value>
+		<uiPosition>(2,2)</uiPosition>
+	</value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+	<xpath>/Defs/RoyalTitlePermitDef[defName="CallTransportShuttle"]/cooldownDays</xpath>
+	<value>
+		<cooldownDays>2</cooldownDays>
+	</value>
+  </Operation>
+	
+  <Operation Class="PatchOperationReplace">
+	<xpath>/Defs/RoyalTitlePermitDef[defName="CallTransportShuttle"]/minTitle</xpath>
+	<value>
+		<minTitle>Freeholder</minTitle>
+	</value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+	<xpath>/Defs/RoyalTitlePermitDef[defName="CallTransportShuttle"]/royalAid/favorCost</xpath>
+	<value>
+		<favorCost>1</favorCost>
+	</value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+	<xpath>/Defs/RoyalTitlePermitDef[defName="CallTransportShuttle"]/uiPosition</xpath>
+	<value>
+		<uiPosition>(4,0)</uiPosition>
+	</value>
+  </Operation>
+	
+  <Operation Class="PatchOperationReplace">
+	<xpath>/Defs/RoyalTitlePermitDef[defName="CallLaborerTeam"]/cooldownDays</xpath>
+	<value>
+		<cooldownDays>8</cooldownDays>
+	</value>
+  </Operation>
+	
+  <Operation Class="PatchOperationReplace">
+	<xpath>/Defs/RoyalTitlePermitDef[defName="CallLaborerTeam"]/minTitle</xpath>
+	<value>
+		<minTitle>Yeoman</minTitle>
+	</value>
+  </Operation>
+	
+  <Operation Class="PatchOperationReplace">
+	<xpath>/Defs/RoyalTitlePermitDef[defName="CallLaborerTeam"]/uiPosition</xpath>
+	<value>
+		<uiPosition>(4,1)</uiPosition>
+	</value>
+  </Operation>
+	
+  <Operation Class="PatchOperationReplace">
+	<xpath>/Defs/RoyalTitlePermitDef[defName="CallLaborerGang"]/cooldownDays</xpath>
+	<value>
+		<cooldownDays>16</cooldownDays>
+	</value>
+  </Operation>
+	
+  <Operation Class="PatchOperationReplace">
+	<xpath>/Defs/RoyalTitlePermitDef[defName="CallLaborerGang"]/minTitle</xpath>
+	<value>
+		<minTitle>Knight</minTitle>
+	</value>
+  </Operation>
+	
+  <Operation Class="PatchOperationReplace">
+	<xpath>/Defs/RoyalTitlePermitDef[defName="CallLaborerGang"]/uiPosition</xpath>
+	<value>
+		<uiPosition>(4,3)</uiPosition>
+	</value>
+  </Operation>
+  
+  <Operation Class="PatchOperationRemove">
+   <xpath>/Defs/RoyalTitlePermitDef[defName="CallLaborerGang"]/prerequisite</xpath>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+	<xpath>/Defs/RoyalTitlePermitDef[defName="CallMilitaryAidSmall"]/cooldownDays</xpath>
+	<value>
+		<cooldownDays>8</cooldownDays>
+	</value>
+  </Operation>
+	
+  <Operation Class="PatchOperationReplace">
+	<xpath>/Defs/RoyalTitlePermitDef[defName="CallMilitaryAidSmall"]/minTitle</xpath>
+	<value>
+		<minTitle>Freeholder</minTitle>
+	</value>
+  </Operation>
+	
+  <Operation Class="PatchOperationReplace">
+	<xpath>/Defs/RoyalTitlePermitDef[defName="CallMilitaryAidSmall"]/uiPosition</xpath>
+	<value>
+		<uiPosition>(5,0)</uiPosition>
+	</value>
+  </Operation>
+	
+  <Operation Class="PatchOperationReplace">
+	<xpath>/Defs/RoyalTitlePermitDef[defName="CallOrbitalStrike"]/cooldownDays</xpath>
+	<value>
+		<cooldownDays>8</cooldownDays>
+	</value>
+  </Operation>
+	
+  <Operation Class="PatchOperationReplace">
+	<xpath>/Defs/RoyalTitlePermitDef[defName="CallOrbitalStrike"]/minTitle</xpath>
+	<value>
+		<minTitle>Yeoman</minTitle>
+	</value>
+  </Operation>
+	
+  <Operation Class="PatchOperationReplace">
+	<xpath>/Defs/RoyalTitlePermitDef[defName="CallOrbitalStrike"]/uiPosition</xpath>
+	<value>
+		<uiPosition>(5,1)</uiPosition>
+	</value>
+  </Operation>
+	
+  <Operation Class="PatchOperationReplace">
+	<xpath>/Defs/RoyalTitlePermitDef[defName="CallMilitaryAidLarge"]/cooldownDays</xpath>
+	<value>
+		<cooldownDays>12</cooldownDays>
+	</value>
+  </Operation>
+	
+  <Operation Class="PatchOperationReplace">
+	<xpath>/Defs/RoyalTitlePermitDef[defName="CallMilitaryAidLarge"]/minTitle</xpath>
+	<value>
+		<minTitle>Acolyte</minTitle>
+	</value>
+  </Operation>
+	
+  <Operation Class="PatchOperationReplace">
+	<xpath>/Defs/RoyalTitlePermitDef[defName="CallMilitaryAidLarge"]/uiPosition</xpath>
+	<value>
+		<uiPosition>(5,2)</uiPosition>
+	</value>
+  </Operation>
+	
+  <Operation Class="PatchOperationReplace">
+	<xpath>/Defs/RoyalTitlePermitDef[defName="CallOrbitalSalvo"]/cooldownDays</xpath>
+	<value>
+		<cooldownDays>12</cooldownDays>
+	</value>
+  </Operation>
+	
+  <Operation Class="PatchOperationReplace">
+	<xpath>/Defs/RoyalTitlePermitDef[defName="CallOrbitalSalvo"]/minTitle</xpath>
+	<value>
+		<minTitle>Knight</minTitle>
+	</value>
+  </Operation>
+	
+  <Operation Class="PatchOperationReplace">
+	<xpath>/Defs/RoyalTitlePermitDef[defName="CallOrbitalSalvo"]/uiPosition</xpath>
+	<value>
+		<uiPosition>(5,3)</uiPosition>
+	</value>
+  </Operation>
+	
+  <Operation Class="PatchOperationReplace">
+	<xpath>/Defs/RoyalTitlePermitDef[defName="CallMilitaryAidGrand"]/cooldownDays</xpath>
+	<value>
+		<cooldownDays>16</cooldownDays>
+	</value>
+  </Operation>
+	
+  <Operation Class="PatchOperationReplace">
+	<xpath>/Defs/RoyalTitlePermitDef[defName="CallMilitaryAidGrand"]/minTitle</xpath>
+	<value>
+		<minTitle>Praetor</minTitle>
+	</value>
+  </Operation>
+	
+  <Operation Class="PatchOperationReplace">
+	<xpath>/Defs/RoyalTitlePermitDef[defName="CallMilitaryAidGrand"]/uiPosition</xpath>
+	<value>
+		<uiPosition>(5,4)</uiPosition>
+	</value>
+  </Operation>
+  
+   <Operation Class="PatchOperationRemove">
+	<xpath>/Defs/RoyalTitlePermitDef[defName="CallMilitaryAidGrand"]/prerequisite</xpath>
+   </Operation>
+</Patch>

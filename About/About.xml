@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+
+    <name>All The Permits</name>
+
+    <author>Seanbeag</author>
+
+    <supportedVersions>
+		<li>1.4</li>
+		<li>1.5</li>
+	</supportedVersions>
+	
+	<modVersion>1.4.2</modVersion>
+	
+	<packageId>Seanbeag.Allthepermits</packageId>
+
+    <description>6 new ranks and 37 new permits to make it a lot more worthwhile and appealing to side with the Empire and work your way up the ranks.
+
+This is not compatible with the new Vanilla Extended Empire mod. If you want a more in-depth Empire experience, I suggest you give that a go. This mod only changes the permits and titles
+
+Bug Fix - v1.4.2 -
+
+Fixed Wood drop not working
+Fixed incompatability mismatch
+
+Bug Fixes and additions v1.4.1 - 
+Steel drop title requirement fixed
+7 New permits added for trade goods
+Extra permit points added to lower titles to accomodate new permits.
+	</description>
+
+	<incompatibleWith>
+	<li>OskarPotocki.VFE.Empire</li>
+	<li>BuffedTitles.Permits</li>
+	<li>fc.morepermits</li>
+	</incompatibleWith>
+	
+	<loadAfter>
+	<li>Ludeon.RimWorld.Royalty</li>
+	<li>OskarPotocki.VanillaFactionsExpanded.Core</li>
+	<li>OskarPotocki.VanillaExpanded.RoyaltyPatches</li>
+	<li>VanillaExpanded.VFECore</li>
+	<li>VanillaExpanded.VFESpacer</li>
+	</loadAfter>
+	
+</ModMetaData>

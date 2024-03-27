@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+
+	
+    <Operation Class="PatchOperationAdd">
+		<xpath>/Defs/RoyalTitleDef[defName="Freeholder"]</xpath>
+		<value>
+			<permitPointsAwarded>1</permitPointsAwarded>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/RoyalTitleDef[defName="Yeoman"]</xpath>
+		<value>
+			<permitPointsAwarded>1</permitPointsAwarded>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/RoyalTitleDef[defName="Yeoman"]/favorCost</xpath>
+		<value>
+			<favorCost>4</favorCost>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/RoyalTitleDef[defName="Acolyte"]/permitPointsAwarded</xpath>
+		<value>
+			<permitPointsAwarded>1</permitPointsAwarded>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/RoyalTitleDef[defName="Acolyte"]/favorCost</xpath>
+		<value>
+			<favorCost>6</favorCost>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/RoyalTitleDef[defName="Knight"]/permitPointsAwarded</xpath>
+		<value>
+			<permitPointsAwarded>2</permitPointsAwarded>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/RoyalTitleDef[defName="Knight"]/favorCost</xpath>
+		<value>
+			<favorCost>8</favorCost>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/RoyalTitleDef[defName="Praetor"]/permitPointsAwarded</xpath>
+		<value>
+			<permitPointsAwarded>2</permitPointsAwarded>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/RoyalTitleDef[defName="Praetor"]/favorCost</xpath>
+		<value>
+			<favorCost>9</favorCost>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/RoyalTitleDef[defName="Baron"]/permitPointsAwarded</xpath>
+		<value>
+			<permitPointsAwarded>2</permitPointsAwarded>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/RoyalTitleDef[defName="Baron"]/favorCost</xpath>
+		<value>
+			<favorCost>11</favorCost>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/RoyalTitleDef[defName="Count"]/permitPointsAwarded</xpath>
+		<value>
+			<permitPointsAwarded>3</permitPointsAwarded>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/RoyalTitleDef[defName="Count"]/favorCost</xpath>
+		<value>
+			<favorCost>15</favorCost>
+		</value>
+	</Operation>
+
+</Patch>

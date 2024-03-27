@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+  <!-- Royalty need patches-->
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Vanilla Furniture Expanded - Spacer Module</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/RoyalTitleDef[defName="Baronet" or defName="Viscount" or defName="Earl" or @Name="BaseEmpireTitleNPC"]/bedroomRequirements/li[@Class="RoomRequirement_ThingAnyOf"][disablingPrecepts/li="SlabBed_Preferred"]/things</xpath>
+          <value>
+            <li>Bed_AdvDoubleBed</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/RoyalTitleDef[defName=defName="Baronet" or defName="Viscount" or defName="Earl" or @Name="BaseEmpireTitleNPC"]/bedroomRequirements/li[@Class="RoomRequirement_ThingAnyOf"][things/li="EndTable"]/things</xpath>
+          <value>
+            <li>Table_IlluminatedEndTable</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/RoyalTitleDef[defName=defName="Baronet" or defName="Viscount" or defName="Earl" or @Name="BaseEmpireTitleNPC"]/bedroomRequirements/li[@Class="RoomRequirement_ThingAnyOf"][things/li="Dresser"]/things</xpath>
+          <value>
+            <li>Table_IlluminatedDresser</li>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>

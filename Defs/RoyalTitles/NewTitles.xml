@@ -1,0 +1,602 @@
+<Defs>
+ <RoyalTitleDef ParentName="BaseEmpireTitle">
+    <defName>Peer</defName>
+    <label>Peer</label>
+    <description>A title for those who have served a noble lord multiple times</description>
+    <seniority>50</seniority>
+    <favorCost>4</favorCost>
+    <permitPointsAwarded>1</permitPointsAwarded>
+    <changeHeirQuestPoints>1000</changeHeirQuestPoints>
+    <allowDignifiedMeditationFocus>False</allowDignifiedMeditationFocus>
+    <awardWorkerClass>RoyalTitleAwardWorker_Instant</awardWorkerClass>
+  </RoyalTitleDef>
+  
+  <RoyalTitleDef ParentName="BaseEmpireTitle">
+    <defName>Patrician</defName>
+    <label>patrician</label>
+    <description>The final step before becoming part of the nobility. The Patrician is tasked with high level management of a noble lords assets.</description>
+    <seniority>150</seniority>
+    <favorCost>5</favorCost>
+    <changeHeirQuestPoints>1000</changeHeirQuestPoints>
+    <commonality>1</commonality>
+    <permitPointsAwarded>2</permitPointsAwarded>
+    <maxPsylinkLevel>1</maxPsylinkLevel>
+  </RoyalTitleDef>
+  
+  <RoyalTitleDef ParentName="BaseEmpireTitle">
+    <defName>Squire</defName>
+    <label>squire</label>
+    <description>An apprentice to a Knight, the Squire will be mentored by a lord so that he may gain all the kowledge needed to advance to the rank of Knight.</description>
+    <seniority>250</seniority>
+    <favorCost>7</favorCost>
+    <changeHeirQuestPoints>1200</changeHeirQuestPoints>
+    <recruitmentResistanceOffset>10</recruitmentResistanceOffset>
+    <commonality>1</commonality>
+    <canBeInherited>True</canBeInherited>
+    <permitPointsAwarded>1</permitPointsAwarded>
+    <maxPsylinkLevel>2</maxPsylinkLevel>
+  </RoyalTitleDef>
+  
+  <RoyalTitleDef ParentName="BaseEmpireTitle">
+    <defName>Baronet</defName>
+    <label>baronet</label>
+    <description>A baron in all but title. The baronet is what a Baron is referred to before their official promotion. The title is also used to refer to someone who takes on the role of a Baron in a time of nees, such as after the passing of said Baron.</description>
+    <seniority>450</seniority>
+    <favorCost>10</favorCost>
+    <minExpectation>High</minExpectation>
+    <requiredMinimumApparelQuality>Normal</requiredMinimumApparelQuality>
+    <changeHeirQuestPoints>2200</changeHeirQuestPoints>
+    <recruitmentResistanceOffset>40</recruitmentResistanceOffset>
+    <commonality>1</commonality>
+    <canBeInherited>True</canBeInherited>
+    <decreeMtbDays>-1</decreeMtbDays> <!-- disabled -->
+    <decreeMentalBreakCommonality>4</decreeMentalBreakCommonality>
+    <permitPointsAwarded>2</permitPointsAwarded>
+    <decreeTags>
+      <li>All</li>
+    </decreeTags>
+    <disabledJoyKinds>
+      <li>Gaming_Dexterity</li>
+    </disabledJoyKinds>
+    <disabledWorkTags>
+      <li>ManualDumb</li>
+      <li>PlantWork</li>
+      <li>Mining</li>
+    </disabledWorkTags>
+    <permits>
+      <li>TradeSettlement</li>
+      <li>TradeCaravan</li>
+    </permits>
+    <requiredApparel>
+      <li>
+        <bodyPartGroupsMatchAny>
+          <li>Torso</li>
+        </bodyPartGroupsMatchAny>
+        <requiredTags>
+          <li>RoyalTier2</li>
+        </requiredTags>
+        <allowedTags>
+          <li>Cape</li>
+          <li>PrestigeCombatGear</li>
+          <li>Psychic</li>
+          <li>Mechlord</li>
+        </allowedTags>
+      </li>
+      <li>
+        <bodyPartGroupsMatchAny>
+          <li>UpperHead</li>
+          <li>FullHead</li>
+        </bodyPartGroupsMatchAny>
+        <requiredTags>
+          <li>RoyalTier2</li>
+        </requiredTags>
+        <allowedTags>
+          <li>PrestigeCombatGear</li>
+          <li>Psychic</li>
+          <li>Mechlord</li>
+        </allowedTags>
+      </li>
+    </requiredApparel>
+    <throneRoomRequirements>
+      <li Class="RoomRequirement_HasAssignedThroneAnyOf">
+        <things>
+          <li>Throne</li>
+          <li>GrandThrone</li>
+        </things>
+      </li>
+      <li Class="RoomRequirement_Area">
+        <area>40</area>
+      </li>
+      <li Class="RoomRequirement_Impressiveness">
+        <impressiveness>90</impressiveness>
+      </li>
+      <li Class="RoomRequirement_TerrainWithTags">
+        <labelKey>RoomRequirementAllFloored</labelKey>
+        <tags>
+          <li>Floor</li>
+          <li>FineFloor</li>
+        </tags>
+      </li>
+      <li Class="RoomRequirement_ThingAnyOfCount">
+        <things>
+          <li>Brazier</li>
+          <li MayRequire="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Ideology">DarklightBrazier</li>
+        </things>
+        <count>2</count>
+      </li>
+      <li Class="RoomRequirement_ThingCount">
+        <thingDef>Column</thingDef>
+        <count>4</count>
+      </li>
+      <li Class="RoomRequirement_ThingAnyOf">
+        <things>
+          <li>Harp</li>
+          <li>Harpsichord</li>
+          <li>Piano</li>
+        </things>
+      </li>
+      <li Class="RoomRequirement_AllThingsAnyOfAreGlowing">
+        <labelKey>RoomRequirementAllBraziersMustBeLit</labelKey>
+        <things>
+          <li>Brazier</li>
+          <li MayRequire="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Ideology">DarklightBrazier</li>
+        </things>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings">
+        <labelKey>RoomRequirementNoProductionFacilities</labelKey>
+        <buildingTags><li>Production</li></buildingTags>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings">
+        <labelKey>RoomRequirementNoBeds</labelKey>
+        <buildingTags><li>Bed</li></buildingTags>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology" Class="RoomRequirement_ForbidAltars">
+        <labelKey>RoomRequirementNoAltars</labelKey>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings" MayRequire="Ludeon.RimWorld.Biotech">
+        <labelKey>RoomRequirementNoBiotechBuildings</labelKey>
+        <buildingTags><li>Biotech</li></buildingTags>
+      </li>
+    </throneRoomRequirements>
+    <bedroomRequirements>
+      <li Class="RoomRequirement_Area">
+        <area>24</area>
+      </li>
+      <li Class="RoomRequirement_Impressiveness">
+        <impressiveness>50</impressiveness>
+      </li>
+      <li Class="RoomRequirement_TerrainWithTags">
+        <labelKey>RoomRequirementAllFloored</labelKey>
+        <tags>
+          <li>Floor</li>
+          <li>FineFloor</li>
+        </tags>
+      </li>
+      <li Class="RoomRequirement_ThingAnyOf">
+        <disablingPrecepts>
+          <li MayRequire="Ludeon.RimWorld.Ideology">SlabBed_Preferred</li>
+        </disablingPrecepts>
+        <things>
+          <li>DoubleBed</li>
+          <li>RoyalBed</li>
+          <li MayRequire="Ludeon.RimWorld.Biotech">DeathrestCasket</li>
+        </things>
+      </li>
+      <li Class="RoomRequirement_Thing">
+        <thingDef>EndTable</thingDef>
+      </li>
+      <li Class="RoomRequirement_Thing">
+        <thingDef>Dresser</thingDef>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings">
+        <labelKey>RoomRequirementNoProductionFacilities</labelKey>
+        <buildingTags><li>Production</li></buildingTags>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings" MayRequire="Ludeon.RimWorld.Biotech">
+        <labelKey>RoomRequirementNoBiotechBuildings</labelKey>
+        <buildingTags><li>Biotech</li></buildingTags>
+      </li>
+    </bedroomRequirements>
+    <foodRequirement>
+      <minQuality>MealFine</minQuality>
+      <allowedTypes>Processed, Liquor</allowedTypes>
+      <allowedDefs>
+        <li>Ambrosia</li>
+        <li>Milk</li>
+        <li>RawBerries</li>
+      </allowedDefs>
+    </foodRequirement>
+    <grantedAbilities><li>Speech</li></grantedAbilities>
+    <speechCooldown>1200000</speechCooldown>
+    <maxPsylinkLevel>4</maxPsylinkLevel>
+  </RoyalTitleDef>
+  
+  <RoyalTitleDef ParentName="BaseEmpireTitle">
+    <defName>Viscount</defName>
+    <label>viscount</label>
+    <labelFemale>Viscountess</labelFemale>
+    <description>Also known as the Assitant to the Regional Manager, the Viscount handles the day to day coordination between Baronies</description>
+    <seniority>530</seniority>
+    <favorCost>12</favorCost>
+    <minExpectation>Noble</minExpectation>
+    <requiredMinimumApparelQuality>Normal</requiredMinimumApparelQuality>
+    <changeHeirQuestPoints>2800</changeHeirQuestPoints>
+    <recruitmentResistanceOffset>60</recruitmentResistanceOffset>
+    <commonality>1</commonality>
+    <canBeInherited>True</canBeInherited>
+    <suppressIdleAlert>true</suppressIdleAlert>
+    <decreeMtbDays>-1</decreeMtbDays> <!-- disabled -->
+    <decreeMentalBreakCommonality>8</decreeMentalBreakCommonality>
+    <permitPointsAwarded>3</permitPointsAwarded>
+    <decreeTags>
+      <li>All</li>
+    </decreeTags>
+    <disabledJoyKinds>
+      <li>Gaming_Dexterity</li>
+    </disabledJoyKinds>
+    <disabledWorkTags>
+      <li>ManualDumb</li>
+      <li>ManualSkilled</li>
+      <li>PlantWork</li>
+      <li>Mining</li>
+    </disabledWorkTags>
+    <permits>
+      <li>TradeSettlement</li>
+      <li>TradeCaravan</li>
+      <li>TradeOrbital</li>
+    </permits>
+    <requiredApparel>
+      <li>
+        <bodyPartGroupsMatchAny>
+          <li>Torso</li>
+        </bodyPartGroupsMatchAny>
+        <requiredTags>
+          <li>RoyalTier2</li>
+        </requiredTags>
+        <allowedTags>
+          <li>Cape</li>
+          <li>PrestigeCombatGear</li>
+          <li>Psychic</li>
+          <li>Mechlord</li>
+        </allowedTags>
+      </li>
+      <li>
+        <bodyPartGroupsMatchAny>
+          <li>Torso</li>
+        </bodyPartGroupsMatchAny>
+        <requiredTags>
+          <li>RoyalTier5</li>
+        </requiredTags>
+        <allowedTags>
+          <li>PrestigeCombatGear</li>
+          <li>Psychic</li>
+          <li>Mechlord</li>
+        </allowedTags>
+      </li>
+      <li>
+        <bodyPartGroupsMatchAny>
+          <li>UpperHead</li>
+          <li>FullHead</li>
+        </bodyPartGroupsMatchAny>
+        <requiredTags>
+          <li>RoyalTier5</li>
+        </requiredTags>
+        <allowedTags>
+          <li>PrestigeCombatGear</li>
+          <li>Psychic</li>
+          <li>Mechlord</li>
+        </allowedTags>
+      </li>
+    </requiredApparel>
+    <throneRoomRequirements>
+      <li Class="RoomRequirement_HasAssignedThroneAnyOf">
+        <things><li>GrandThrone</li></things>
+      </li>
+      <li Class="RoomRequirement_Area">
+        <area>60</area>
+      </li>
+      <li Class="RoomRequirement_Impressiveness">
+        <impressiveness>120</impressiveness>
+      </li>
+      <li Class="RoomRequirement_TerrainWithTags">
+        <labelKey>RoomRequirementAllFineFloored</labelKey>
+        <tags>
+          <li>FineFloor</li>
+        </tags>
+      </li>
+      <li Class="RoomRequirement_ThingAnyOfCount">
+        <things>
+          <li>Brazier</li>
+          <li MayRequire="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Ideology">DarklightBrazier</li>
+        </things>
+        <count>2</count>
+      </li>
+      <li Class="RoomRequirement_ThingCount">
+        <thingDef>Column</thingDef>
+        <count>4</count>
+      </li>
+      <li Class="RoomRequirement_ThingCount">
+        <thingDef>Drape</thingDef>
+        <count>2</count>
+      </li>
+      <li Class="RoomRequirement_ThingAnyOf">
+        <things>
+          <li>Harpsichord</li>
+          <li>Piano</li>
+        </things>
+      </li>
+      <li Class="RoomRequirement_AllThingsAnyOfAreGlowing">
+        <labelKey>RoomRequirementAllBraziersMustBeLit</labelKey>
+        <things>
+          <li>Brazier</li>
+          <li MayRequire="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Ideology">DarklightBrazier</li>
+        </things>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings">
+        <labelKey>RoomRequirementNoProductionFacilities</labelKey>
+        <buildingTags><li>Production</li></buildingTags>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings">
+        <labelKey>RoomRequirementNoBeds</labelKey>
+        <buildingTags><li>Bed</li></buildingTags>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology" Class="RoomRequirement_ForbidAltars">
+        <labelKey>RoomRequirementNoAltars</labelKey>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings" MayRequire="Ludeon.RimWorld.Biotech">
+        <labelKey>RoomRequirementNoBiotechBuildings</labelKey>
+        <buildingTags><li>Biotech</li></buildingTags>
+      </li>
+    </throneRoomRequirements>
+    <bedroomRequirements>
+      <li Class="RoomRequirement_Area">
+        <area>30</area>
+      </li>
+      <li Class="RoomRequirement_Impressiveness">
+        <impressiveness>70</impressiveness>
+      </li>
+      <li Class="RoomRequirement_TerrainWithTags">
+        <labelKey>RoomRequirementAllFloored</labelKey>
+        <tags>
+          <li>Floor</li>
+          <li>FineFloor</li>
+        </tags>
+      </li>
+      <li Class="RoomRequirement_ThingAnyOf">
+        <disablingPrecepts>
+          <li MayRequire="Ludeon.RimWorld.Ideology">SlabBed_Preferred</li>
+        </disablingPrecepts>
+        <things>
+          <li>RoyalBed</li>
+          <li MayRequire="Ludeon.RimWorld.Biotech">DeathrestCasket</li>
+        </things>
+      </li>
+      <li Class="RoomRequirement_Thing">
+        <thingDef>EndTable</thingDef>
+      </li>
+      <li Class="RoomRequirement_Thing">
+        <thingDef>Dresser</thingDef>
+      </li>
+      <li Class="RoomRequirement_ThingCount">
+        <thingDef>Drape</thingDef>
+        <count>1</count>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings">
+        <labelKey>RoomRequirementNoProductionFacilities</labelKey>
+        <buildingTags><li>Production</li></buildingTags>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings" MayRequire="Ludeon.RimWorld.Biotech">
+        <labelKey>RoomRequirementNoBiotechBuildings</labelKey>
+        <buildingTags><li>Biotech</li></buildingTags>
+      </li>
+    </bedroomRequirements>
+    <foodRequirement>
+      <minQuality>MealLavish</minQuality>
+      <allowedTypes>Processed, Liquor</allowedTypes>
+      <allowedDefs>
+        <li>Ambrosia</li>
+        <li>Milk</li>
+        <li>RawBerries</li>
+        <li>InsectJelly</li>
+      </allowedDefs>
+    </foodRequirement>
+    <grantedAbilities><li>Speech</li></grantedAbilities>
+    <speechCooldown>900000</speechCooldown>
+    <maxPsylinkLevel>5</maxPsylinkLevel>
+  </RoyalTitleDef>
+  
+  <RoyalTitleDef ParentName="BaseEmpireTitle">
+    <defName>Earl</defName>
+    <label>earl</label>
+    <labelFemale>earl</labelFemale>
+    <description>The Earl is responible for the control of multiple Baronies. It is the Earl's job to secure any non-Empire borders in their territory, manage disputes between Baronies, ensure that all production facilites are kept running and put down any discontent in the name of the Empire.</description>
+    <seniority>570</seniority>
+    <favorCost>13</favorCost>
+    <minExpectation>Noble</minExpectation>
+    <requiredMinimumApparelQuality>Normal</requiredMinimumApparelQuality>
+    <changeHeirQuestPoints>2800</changeHeirQuestPoints>
+    <recruitmentResistanceOffset>60</recruitmentResistanceOffset>
+    <commonality>1</commonality>
+    <canBeInherited>True</canBeInherited>
+    <suppressIdleAlert>true</suppressIdleAlert>
+    <decreeMtbDays>-1</decreeMtbDays> <!-- disabled -->
+    <decreeMentalBreakCommonality>8</decreeMentalBreakCommonality>
+    <permitPointsAwarded>3</permitPointsAwarded>
+    <decreeTags>
+      <li>All</li>
+    </decreeTags>
+    <disabledJoyKinds>
+      <li>Gaming_Dexterity</li>
+    </disabledJoyKinds>
+    <disabledWorkTags>
+      <li>ManualDumb</li>
+      <li>ManualSkilled</li>
+      <li>PlantWork</li>
+      <li>Mining</li>
+    </disabledWorkTags>
+    <permits>
+      <li>TradeSettlement</li>
+      <li>TradeCaravan</li>
+      <li>TradeOrbital</li>
+    </permits>
+    <requiredApparel>
+      <li>
+        <bodyPartGroupsMatchAny>
+          <li>Torso</li>
+        </bodyPartGroupsMatchAny>
+        <requiredTags>
+          <li>RoyalTier2</li>
+        </requiredTags>
+        <allowedTags>
+          <li>Cape</li>
+          <li>PrestigeCombatGear</li>
+          <li>Psychic</li>
+          <li>Mechlord</li>
+        </allowedTags>
+      </li>
+      <li>
+        <bodyPartGroupsMatchAny>
+          <li>Torso</li>
+        </bodyPartGroupsMatchAny>
+        <requiredTags>
+          <li>RoyalTier5</li>
+        </requiredTags>
+        <allowedTags>
+          <li>PrestigeCombatGear</li>
+          <li>Psychic</li>
+          <li>Mechlord</li>
+        </allowedTags>
+      </li>
+      <li>
+        <bodyPartGroupsMatchAny>
+          <li>UpperHead</li>
+          <li>FullHead</li>
+        </bodyPartGroupsMatchAny>
+        <requiredTags>
+          <li>RoyalTier5</li>
+        </requiredTags>
+        <allowedTags>
+          <li>PrestigeCombatGear</li>
+          <li>Psychic</li>
+          <li>Mechlord</li>
+        </allowedTags>
+      </li>
+    </requiredApparel>
+    <throneRoomRequirements>
+      <li Class="RoomRequirement_HasAssignedThroneAnyOf">
+        <things><li>GrandThrone</li></things>
+      </li>
+      <li Class="RoomRequirement_Area">
+        <area>60</area>
+      </li>
+      <li Class="RoomRequirement_Impressiveness">
+        <impressiveness>120</impressiveness>
+      </li>
+      <li Class="RoomRequirement_TerrainWithTags">
+        <labelKey>RoomRequirementAllFineFloored</labelKey>
+        <tags>
+          <li>FineFloor</li>
+        </tags>
+      </li>
+      <li Class="RoomRequirement_ThingAnyOfCount">
+        <things>
+          <li>Brazier</li>
+          <li MayRequire="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Ideology">DarklightBrazier</li>
+        </things>
+        <count>2</count>
+      </li>
+      <li Class="RoomRequirement_ThingCount">
+        <thingDef>Column</thingDef>
+        <count>4</count>
+      </li>
+      <li Class="RoomRequirement_ThingCount">
+        <thingDef>Drape</thingDef>
+        <count>2</count>
+      </li>
+      <li Class="RoomRequirement_ThingAnyOf">
+        <things>
+          <li>Harpsichord</li>
+          <li>Piano</li>
+        </things>
+      </li>
+      <li Class="RoomRequirement_AllThingsAnyOfAreGlowing">
+        <labelKey>RoomRequirementAllBraziersMustBeLit</labelKey>
+        <things>
+          <li>Brazier</li>
+          <li MayRequire="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Ideology">DarklightBrazier</li>
+        </things>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings">
+        <labelKey>RoomRequirementNoProductionFacilities</labelKey>
+        <buildingTags><li>Production</li></buildingTags>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings">
+        <labelKey>RoomRequirementNoBeds</labelKey>
+        <buildingTags><li>Bed</li></buildingTags>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology" Class="RoomRequirement_ForbidAltars">
+        <labelKey>RoomRequirementNoAltars</labelKey>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings" MayRequire="Ludeon.RimWorld.Biotech">
+        <labelKey>RoomRequirementNoBiotechBuildings</labelKey>
+        <buildingTags><li>Biotech</li></buildingTags>
+      </li>
+    </throneRoomRequirements>
+    <bedroomRequirements>
+      <li Class="RoomRequirement_Area">
+        <area>30</area>
+      </li>
+      <li Class="RoomRequirement_Impressiveness">
+        <impressiveness>70</impressiveness>
+      </li>
+      <li Class="RoomRequirement_TerrainWithTags">
+        <labelKey>RoomRequirementAllFloored</labelKey>
+        <tags>
+          <li>Floor</li>
+          <li>FineFloor</li>
+        </tags>
+      </li>
+      <li Class="RoomRequirement_ThingAnyOf">
+        <disablingPrecepts>
+          <li MayRequire="Ludeon.RimWorld.Ideology">SlabBed_Preferred</li>
+        </disablingPrecepts>
+        <things>
+          <li>RoyalBed</li>
+          <li MayRequire="Ludeon.RimWorld.Biotech">DeathrestCasket</li>
+        </things>
+      </li>
+      <li Class="RoomRequirement_Thing">
+        <thingDef>EndTable</thingDef>
+      </li>
+      <li Class="RoomRequirement_Thing">
+        <thingDef>Dresser</thingDef>
+      </li>
+      <li Class="RoomRequirement_ThingCount">
+        <thingDef>Drape</thingDef>
+        <count>1</count>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings">
+        <labelKey>RoomRequirementNoProductionFacilities</labelKey>
+        <buildingTags><li>Production</li></buildingTags>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings" MayRequire="Ludeon.RimWorld.Biotech">
+        <labelKey>RoomRequirementNoBiotechBuildings</labelKey>
+        <buildingTags><li>Biotech</li></buildingTags>
+      </li>
+    </bedroomRequirements>
+    <foodRequirement>
+      <minQuality>MealLavish</minQuality>
+      <allowedTypes>Processed, Liquor</allowedTypes>
+      <allowedDefs>
+        <li>Ambrosia</li>
+        <li>Milk</li>
+        <li>RawBerries</li>
+        <li>InsectJelly</li>
+      </allowedDefs>
+    </foodRequirement>
+    <grantedAbilities><li>Speech</li></grantedAbilities>
+    <speechCooldown>900000</speechCooldown>
+    <maxPsylinkLevel>5</maxPsylinkLevel>
+  </RoyalTitleDef>
+  
+</Defs>

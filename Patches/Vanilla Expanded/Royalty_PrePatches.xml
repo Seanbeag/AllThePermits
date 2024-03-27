@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+  <!-- Replace RoomRequirement_Thing with RoomRequirement_ThingAnyOf for EndTable and Dresser -->
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/RoyalTitleDef[defName="Baronet" or defName="Viscount" or defName="Earl" or @Name="BaseEmpireTitleNPC"]/bedroomRequirements//li[@Class="RoomRequirement_Thing"][thingDef="EndTable"]</xpath>
+    <value>
+      <li Class="RoomRequirement_ThingAnyOf">
+        <things>
+          <li>EndTable</li>
+        </things>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/RoyalTitleDef[defName=defName="Baronet" or defName="Viscount" or defName="Earl" or @Name="BaseEmpireTitleNPC"]/bedroomRequirements//li[@Class="RoomRequirement_Thing"][thingDef="Dresser"]</xpath>
+    <value>
+      <li Class="RoomRequirement_ThingAnyOf">
+        <things>
+          <li>Dresser</li>
+        </things>
+      </li>
+    </value>
+  </Operation>
+
+  <!-- Replace ThroneRoomRequirements RoomRequirement_ThingCount with RoomRequirement_ThingAnyOfCount -->
+  <!-- Replace columns -->
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/RoyalTitleDef[defName="Baronet"]/throneRoomRequirements//li[@Class="RoomRequirement_ThingCount"][thingDef="Column"]</xpath>
+    <value>
+      <li Class="RoomRequirement_ThingAnyOfCount">
+        <things>
+          <li>Column</li>
+        </things>
+        <count>2</count>
+      </li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/RoyalTitleDef[defName="Viscount" or defName="Earl"]/throneRoomRequirements//li[@Class="RoomRequirement_ThingCount"][thingDef="Column"]</xpath>
+    <value>
+      <li Class="RoomRequirement_ThingAnyOfCount">
+        <things>
+          <li>Column</li>
+        </things>
+        <count>4</count>
+      </li>
+    </value>
+  </Operation>
+</Patch>

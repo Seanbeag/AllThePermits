@@ -1,0 +1,883 @@
+<Defs>
+
+<RoyalTitlePermitDef ParentName="DropResourcesBase">
+	<defName>PemmicanDrop</defName>
+    <label>pemmican drop</label>
+    <description>Call for a drop of 400 Pemmican</description>
+    <minTitle>Freeholder</minTitle>
+    <faction>Empire</faction>
+    <permitPointCost>1</permitPointCost>
+    <uiPosition>(0,0)</uiPosition>
+    <royalAid>
+      <itemsToDrop>
+        <Pemmican>400</Pemmican>
+      </itemsToDrop>
+      <favorCost>1</favorCost>
+    </royalAid>
+    <cooldownDays>5</cooldownDays>
+  </RoyalTitlePermitDef>
+  
+<RoyalTitlePermitDef ParentName="DropResourcesBase">
+    <defName>MealSimpleDrop</defName>
+    <label>simple meal drop</label>
+    <description>Call for a drop of 20 Simple Meals</description>
+    <minTitle>Yeoman</minTitle>
+    <faction>Empire</faction>
+    <permitPointCost>1</permitPointCost>
+    <uiPosition>(0,1)</uiPosition>
+    <royalAid>
+      <itemsToDrop>
+        <MealSimple>20</MealSimple>
+      </itemsToDrop>
+      <favorCost>2</favorCost>
+    </royalAid>
+    <cooldownDays>10</cooldownDays>
+  </RoyalTitlePermitDef>
+  
+<RoyalTitlePermitDef ParentName="DropResourcesBase">
+	<defName>ChocolateDrop</defName>
+    <label>Chocolate drop</label>
+    <description>Call for a drop of 20 Chocolate</description>
+    <minTitle>Knight</minTitle>
+    <faction>Empire</faction>
+    <permitPointCost>1</permitPointCost>
+    <uiPosition>(0,3)</uiPosition>
+    <royalAid>
+      <itemsToDrop>
+        <Chocolate>20</Chocolate>
+      </itemsToDrop>
+      <favorCost>3</favorCost>
+    </royalAid>
+	<cooldownDays>10</cooldownDays>
+  </RoyalTitlePermitDef>
+  
+<RoyalTitlePermitDef ParentName="DropResourcesBase">
+    <defName>MealFineDrop</defName>
+    <label>Fine meal drop</label>
+    <description>Call for a drop of 20 Fine Meals</description>
+    <minTitle>Praetor</minTitle>
+    <faction>Empire</faction>
+    <permitPointCost>1</permitPointCost>
+    <uiPosition>(0,4)</uiPosition>
+    <royalAid>
+      <itemsToDrop>
+		<MealFine>20</MealFine>
+      </itemsToDrop>
+      <favorCost>4</favorCost>
+    </royalAid>
+    <cooldownDays>15</cooldownDays>
+ </RoyalTitlePermitDef>
+
+<RoyalTitlePermitDef ParentName="DropResourcesBase">
+    <defName>Ambrosia</defName>
+    <label>Ambrosia drop</label>
+    <description>Call for a drop of 20 Ambrosia</description>
+    <minTitle>Baron</minTitle>
+    <faction>Empire</faction>
+    <permitPointCost>1</permitPointCost>
+    <uiPosition>(0,5)</uiPosition>
+    <royalAid>
+      <itemsToDrop>
+        <Ambrosia>20</Ambrosia>
+      </itemsToDrop>
+      <favorCost>5</favorCost>
+    </royalAid>
+    <cooldownDays>15</cooldownDays>
+ </RoyalTitlePermitDef>
+ 
+<RoyalTitlePermitDef ParentName="DropResourcesBase">
+    <defName>MealLavishDrop</defName>
+    <label>Lavish Meal drop</label>
+    <description>Call for a drop of 20 Lavish Meals</description>
+    <minTitle>Count</minTitle>
+    <faction>Empire</faction>
+    <permitPointCost>1</permitPointCost>
+    <uiPosition>(0,6)</uiPosition>
+    <royalAid>
+      <itemsToDrop>
+		<MealLavish>20</MealLavish>
+      </itemsToDrop>
+      <favorCost>7</favorCost>
+    </royalAid>
+    <cooldownDays>20</cooldownDays>
+ </RoyalTitlePermitDef>
+ 
+<RoyalTitlePermitDef ParentName="DropResourcesBase">
+    <defName>MedicineHerbalDrop</defName>
+    <label>herbal medicine drop</label>
+    <description>Call for a drop of 20 herbal medicine</description>
+    <minTitle>Freeholder</minTitle>
+    <faction>Empire</faction>
+    <permitPointCost>1</permitPointCost>
+    <uiPosition>(1,0)</uiPosition>
+    <royalAid>
+      <itemsToDrop>
+        <MedicineHerbal>20</MedicineHerbal>
+      </itemsToDrop>
+      <favorCost>1</favorCost>
+    </royalAid>
+	<cooldownDays>10</cooldownDays>
+ </RoyalTitlePermitDef>
+ 
+<RoyalTitlePermitDef ParentName="DropResourcesBase">
+    <defName>PenoxycylineDrop</defName>
+    <label>penoxycyline drop</label>
+    <description>Call for 15 penoxycyline</description>
+    <minTitle>Yeoman</minTitle>
+    <faction>Empire</faction>
+    <permitPointCost>1</permitPointCost>
+    <uiPosition>(1,1)</uiPosition>
+    <royalAid>
+      <itemsToDrop>
+        <Penoxycyline>15</Penoxycyline>
+      </itemsToDrop>
+      <favorCost>2</favorCost>
+    </royalAid>
+    <cooldownDays>15</cooldownDays>
+ </RoyalTitlePermitDef>
+ 
+<RoyalTitlePermitDef ParentName="DropResourcesBase">
+    <defName>MedicineIndDrop</defName>
+    <label>industrial medicine drop</label>
+    <description>Call for a drop of 20 industrial medicine</description>
+    <minTitle>Acolyte</minTitle>
+    <faction>Empire</faction>
+    <permitPointCost>1</permitPointCost>
+    <uiPosition>(1,2)</uiPosition>
+    <royalAid>
+      <itemsToDrop>
+        <MedicineIndustrial>10</MedicineIndustrial>
+      </itemsToDrop>
+      <favorCost>3</favorCost>
+    </royalAid>
+    <cooldownDays>15</cooldownDays>
+ </RoyalTitlePermitDef>
+ 
+<RoyalTitlePermitDef ParentName="DropResourcesBase">
+    <defName>LuciferiumDrop</defName>
+    <label>luciferium drop</label>
+    <description>Call for 10 luciferium</description>
+    <minTitle>Knight</minTitle>
+    <faction>Empire</faction>
+    <permitPointCost>1</permitPointCost>
+    <uiPosition>(1,3)</uiPosition>
+    <royalAid>
+      <itemsToDrop>
+        <Luciferium>10</Luciferium>
+      </itemsToDrop>
+      <favorCost>5</favorCost>
+    </royalAid>
+    <cooldownDays>12</cooldownDays>
+ </RoyalTitlePermitDef>
+ 
+<RoyalTitlePermitDef ParentName="DropResourcesBase">
+    <defName>HealerDrop</defName>
+    <label>healer drop</label>
+    <description>Call for 1 healer mech serum</description>
+    <minTitle>Baron</minTitle>
+    <faction>Empire</faction>
+    <permitPointCost>1</permitPointCost>
+    <uiPosition>(1,5)</uiPosition>
+    <royalAid>
+      <itemsToDrop>
+        <MechSerumHealer>1</MechSerumHealer>
+      </itemsToDrop>
+      <favorCost>10</favorCost>
+    </royalAid>
+    <cooldownDays>25</cooldownDays>
+ </RoyalTitlePermitDef>
+ 
+<RoyalTitlePermitDef ParentName="DropResourcesBase">
+    <defName>ResurrectorDrop</defName>
+    <label>resurrector serum drop</label>
+    <description>Call for 1 Resurrector Mech Serum</description>
+    <minTitle>Count</minTitle>
+    <faction>Empire</faction>
+    <permitPointCost>1</permitPointCost>
+    <uiPosition>(1,6)</uiPosition>
+    <royalAid>
+      <itemsToDrop>
+        <MechSerumResurrector>1</MechSerumResurrector>
+      </itemsToDrop>
+      <favorCost>15</favorCost>
+    </royalAid>
+    <cooldownDays>30</cooldownDays>
+ </RoyalTitlePermitDef>
+ 
+<RoyalTitlePermitDef ParentName="DropResourcesBase">
+    <defName>WoodDrop</defName>
+    <label>wood drop</label>
+    <description>Call for a drop of 400 Wood</description>
+    <minTitle>Freeholder</minTitle>
+    <faction>Empire</faction>
+    <permitPointCost>1</permitPointCost>
+    <uiPosition>(2,0)</uiPosition>
+    <royalAid>
+      <itemsToDrop>
+        <WoodLog>400</WoodLog>
+      </itemsToDrop>
+      <favorCost>1</favorCost>
+    </royalAid>
+    <cooldownDays>10</cooldownDays>
+ </RoyalTitlePermitDef>
+ 
+<RoyalTitlePermitDef ParentName="DropResourcesBase">
+    <defName>JadeDrop</defName>
+    <label>jade drop</label>
+    <description>Call for a drop of 200 Jade</description>
+    <minTitle>Knight</minTitle>
+    <faction>Empire</faction>
+    <permitPointCost>1</permitPointCost>
+    <uiPosition>(2,3)</uiPosition>
+    <royalAid>
+      <itemsToDrop>
+        <Jade>200</Jade>
+      </itemsToDrop>
+      <favorCost>5</favorCost>
+    </royalAid>
+    <cooldownDays>15</cooldownDays>
+ </RoyalTitlePermitDef>
+ 
+<RoyalTitlePermitDef ParentName="DropResourcesBase">
+    <defName>PlasteelDrop</defName>
+    <label>plasteel drop</label>
+    <description>Call for a drop of 300 Plasteel</description>
+    <minTitle>Praetor</minTitle>
+    <faction>Empire</faction>
+    <permitPointCost>1</permitPointCost>
+    <uiPosition>(2,4)</uiPosition>
+    <royalAid>
+      <itemsToDrop>
+		<Plasteel>300</Plasteel>
+      </itemsToDrop>
+      <favorCost>4</favorCost>
+    </royalAid>
+    <cooldownDays>15</cooldownDays>
+ </RoyalTitlePermitDef> 
+ 
+<RoyalTitlePermitDef ParentName="DropResourcesBase">
+    <defName>UraniumDrop</defName>
+    <label>uranium drop</label>
+    <description>Call for a drop of 300 Plasteel and 200 Uranium</description>
+    <minTitle>Baron</minTitle>
+    <faction>Empire</faction>
+    <permitPointCost>1</permitPointCost>
+	<prerequisite>PlasteelDrop</prerequisite>
+    <uiPosition>(2,5)</uiPosition>
+    <royalAid>
+      <itemsToDrop>
+		<Plasteel>300</Plasteel>
+		<Uranium>200</Uranium>
+      </itemsToDrop>
+      <favorCost>5</favorCost>
+    </royalAid>
+    <cooldownDays>15</cooldownDays>
+ </RoyalTitlePermitDef> 
+ 
+<RoyalTitlePermitDef ParentName="DropResourcesBase">
+    <defName>GoldDrop</defName>
+    <label>gold drop</label>
+    <description>Call for a drop of 50 Gold 500 Silver</description>
+    <minTitle>Count</minTitle>
+    <faction>Empire</faction>
+    <permitPointCost>1</permitPointCost>
+	<prerequisite>SilverDrop</prerequisite>
+    <uiPosition>(2,6)</uiPosition>
+    <royalAid>
+      <itemsToDrop>
+        <Silver>500</Silver>
+		<Gold>50</Gold>
+      </itemsToDrop>
+      <favorCost>6</favorCost>
+    </royalAid>
+    <cooldownDays>20</cooldownDays>
+ </RoyalTitlePermitDef>
+
+<RoyalTitlePermitDef ParentName="DropResourcesBase">
+    <defName>WoolSheepDrop</defName>
+    <label>wool drop</label>
+    <description>Call for a drop of 200 wool</description>
+    <minTitle>Freeholder</minTitle>
+    <faction>Empire</faction>
+    <permitPointCost>1</permitPointCost>
+    <uiPosition>(3,0)</uiPosition>
+    <royalAid>
+      <itemsToDrop>
+		<WoolSheep>200</WoolSheep>
+      </itemsToDrop>
+      <favorCost>1</favorCost>
+    </royalAid>
+    <cooldownDays>10</cooldownDays>
+ </RoyalTitlePermitDef>
+ 
+<RoyalTitlePermitDef ParentName="DropResourcesBase">
+    <defName>LightLeatherDrop</defName>
+    <label>light leather drop</label>
+    <description>Call for a drop of 200 LightLeather</description>
+    <minTitle>Yeoman</minTitle>
+    <faction>Empire</faction>
+    <permitPointCost>1</permitPointCost>
+    <uiPosition>(3,1)</uiPosition>
+    <royalAid>
+      <itemsToDrop>
+        <Leather_Light>200</Leather_Light>
+      </itemsToDrop>
+      <favorCost>2</favorCost>
+    </royalAid>
+    <cooldownDays>15</cooldownDays>
+ </RoyalTitlePermitDef> 
+ 
+<RoyalTitlePermitDef ParentName="DropResourcesBase">
+    <defName>LeatherDrop</defName>
+    <label>plain leather drop</label>
+    <description>Call for a drop of 200 PlainLeather</description>
+    <minTitle>Acolyte</minTitle>
+    <faction>Empire</faction>
+    <permitPointCost>1</permitPointCost>
+	<prerequisite>LightLeatherDrop</prerequisite>
+    <uiPosition>(3,2)</uiPosition>
+    <royalAid>
+      <itemsToDrop>
+        <Leather_Plain>200</Leather_Plain>
+      </itemsToDrop>
+      <favorCost>2</favorCost>
+    </royalAid>
+    <cooldownDays>15</cooldownDays>
+ </RoyalTitlePermitDef>
+ 
+<RoyalTitlePermitDef ParentName="DropResourcesBase">
+    <defName>DevilDrop</defName>
+    <label>devilstrand drop</label>
+    <description>Call for a drop of 300 Devilstrand</description>
+    <minTitle>Knight</minTitle>
+    <faction>Empire</faction>
+    <permitPointCost>1</permitPointCost>
+	<prerequisite>WoolSheepDrop</prerequisite>
+    <uiPosition>(3,3)</uiPosition>
+    <royalAid>
+      <itemsToDrop>
+		<DevilstrandCloth>300</DevilstrandCloth>
+      </itemsToDrop>
+      <favorCost>3</favorCost>
+    </royalAid>
+    <cooldownDays>20</cooldownDays>
+ </RoyalTitlePermitDef> 
+ 
+<RoyalTitlePermitDef ParentName="DropResourcesBase">
+    <defName>SynthDrop</defName>
+    <label>synththread drop</label>
+    <description>Call for a drop of 200 Synththread</description>
+    <minTitle>Praetor</minTitle>
+    <faction>Empire</faction>
+    <permitPointCost>1</permitPointCost>
+    <uiPosition>(3,4)</uiPosition>
+    <royalAid>
+      <itemsToDrop>
+        <Synthread>200</Synthread>		
+      </itemsToDrop>
+      <favorCost>3</favorCost>
+    </royalAid>
+    <cooldownDays>15</cooldownDays>
+ </RoyalTitlePermitDef>
+ 
+<RoyalTitlePermitDef ParentName="DropResourcesBase">
+    <defName>ThrumboDrop</defName>
+    <label>thrumbo drop</label>
+    <description>Call for a drop of 200 Thrumbofur</description>
+    <minTitle>Baron</minTitle>
+    <faction>Empire</faction>
+    <permitPointCost>1</permitPointCost>
+    <uiPosition>(3,5)</uiPosition>
+    <royalAid>
+      <itemsToDrop>
+        <Leather_Thrumbo>200</Leather_Thrumbo>
+      </itemsToDrop>
+      <favorCost>5</favorCost>
+    </royalAid>
+    <cooldownDays>20</cooldownDays>
+ </RoyalTitlePermitDef> 
+ 
+<RoyalTitlePermitDef ParentName="DropResourcesBase">
+    <defName>HyperDrop</defName>
+    <label>hyperweave drop</label>
+    <description>Call for a drop of 300 Hyperweave</description>
+    <minTitle>Count</minTitle>
+    <faction>Empire</faction>
+    <permitPointCost>1</permitPointCost>
+    <uiPosition>(3,6)</uiPosition>
+    <royalAid>
+      <itemsToDrop>
+		<Hyperweave>300</Hyperweave>
+      </itemsToDrop>
+      <favorCost>5</favorCost>
+    </royalAid>
+    <cooldownDays>20</cooldownDays>
+ </RoyalTitlePermitDef>
+ 
+<RoyalTitlePermitDef>
+    <defName>CallTransportShuttle1</defName>
+    <label>call transport shuttle</label>
+    <description>Call a shuttle for your own use. It will transport colonists, items, and animals anywhere you like within 70 world tiles.</description>
+    <workerClass>RoyalTitlePermitWorker_CallShuttle</workerClass>
+    <minTitle>Acolyte</minTitle>
+    <faction>Empire</faction>
+    <permitPointCost>1</permitPointCost>
+    <cooldownDays>5</cooldownDays>
+    <usableOnWorldMap>true</usableOnWorldMap>
+    <uiPosition>(4,2)</uiPosition>
+    <royalAid>
+      <favorCost>1</favorCost>
+      <targetingRange>44.9</targetingRange>
+      <targetingRequireLOS>false</targetingRequireLOS>
+    </royalAid>
+  </RoyalTitlePermitDef>
+  
+<RoyalTitlePermitDef>
+    <defName>CallTransportShuttle2</defName>
+    <label>call transport shuttle</label>
+    <description>Call a shuttle for your own use. It will transport colonists, items, and animals anywhere you like within 70 world tiles.</description>
+    <workerClass>RoyalTitlePermitWorker_CallShuttle</workerClass>
+    <minTitle>Praetor</minTitle>
+    <faction>Empire</faction>
+    <permitPointCost>1</permitPointCost>
+    <cooldownDays>5</cooldownDays>
+    <usableOnWorldMap>true</usableOnWorldMap>
+    <uiPosition>(4,4)</uiPosition>
+    <royalAid>
+      <favorCost>1</favorCost>
+      <targetingRange>44.9</targetingRange>
+      <targetingRequireLOS>false</targetingRequireLOS>
+    </royalAid>
+ </RoyalTitlePermitDef>
+  
+<RoyalTitlePermitDef>
+    <defName>CallLaborerArmy</defName>
+    <label>call laborer army</label>
+    <description>Call a group of 12 laborers to assist you for 4 days. These workers can only do general labor tasks. You can control them as though they were your own colonists. You are required to keep them safe.</description>
+    <workerClass>RoyalTitlePermitWorker_CallLaborers</workerClass>
+    <minTitle>Baron</minTitle>
+    <faction>Empire</faction>
+    <permitPointCost>1</permitPointCost>
+    <uiPosition>(4,5)</uiPosition>
+    <prerequisite>CallLaborerGang</prerequisite>
+    <royalAid>
+      <favorCost>12</favorCost>
+      <pawnKindDef>Empire_Common_Laborer</pawnKindDef>
+      <pawnCount>12</pawnCount>
+      <aidDurationDays>4</aidDurationDays>
+    </royalAid>
+    <cooldownDays>20</cooldownDays>
+ </RoyalTitlePermitDef>
+  
+<RoyalTitlePermitDef>
+    <defName>CallTransportShuttle3</defName>
+    <label>call transport shuttle</label>
+    <description>Call a shuttle for your own use. It will transport colonists, items, and animals anywhere you like within 70 world tiles.</description>
+    <workerClass>RoyalTitlePermitWorker_CallShuttle</workerClass>
+    <minTitle>Count</minTitle>
+    <faction>Empire</faction>
+    <permitPointCost>1</permitPointCost>
+    <cooldownDays>5</cooldownDays>
+    <usableOnWorldMap>true</usableOnWorldMap>
+    <uiPosition>(4,6)</uiPosition>
+    <royalAid>
+      <favorCost>1</favorCost>
+      <targetingRange>44.9</targetingRange>
+      <targetingRequireLOS>false</targetingRequireLOS>
+    </royalAid>
+ </RoyalTitlePermitDef>
+  
+<RoyalTitlePermitDef>
+    <defName>CallMilitaryAidMega</defName>
+    <label>call Ranged Stellic squad</label>
+    <description>Call a group of 6 Ranged Stellic Guards to aid you in battle.</description>
+    <workerClass>RoyalTitlePermitWorker_CallAid</workerClass>
+    <minTitle>Baron</minTitle>
+    <faction>Empire</faction>
+    <permitPointCost>1</permitPointCost>
+    <uiPosition>(5,5)</uiPosition>
+    <royalAid>
+      <favorCost>8</favorCost>
+      <pawnKindDef>Empire_Fighter_StellicGuardRanged</pawnKindDef>
+      <pawnCount>6</pawnCount>
+      <targetingRange>39.9</targetingRange>
+    </royalAid>
+    <cooldownDays>30</cooldownDays>
+ </RoyalTitlePermitDef>
+  
+<RoyalTitlePermitDef>
+    <defName>CallMilitaryAidClose</defName>
+    <label>call Melee Stellic squad</label>
+    <description>Call a group of 6 Melee Stellic Guards to protect you.</description>
+    <workerClass>RoyalTitlePermitWorker_CallAid</workerClass>
+    <minTitle>Count</minTitle>
+    <faction>Empire</faction>
+    <permitPointCost>1</permitPointCost>
+    <uiPosition>(5,6)</uiPosition>
+    <royalAid>
+      <favorCost>8</favorCost>
+      <pawnKindDef>Empire_Fighter_StellicGuardMelee</pawnKindDef>
+      <pawnCount>6</pawnCount>
+      <targetingRange>39.9</targetingRange>
+    </royalAid>
+    <cooldownDays>30</cooldownDays>
+ </RoyalTitlePermitDef>
+
+<RoyalTitlePermitDef ParentName="DropResourcesBase">
+    <defName>ThrumboHornDrop</defName>
+    <label>Thrumbo Horn drop</label>
+    <description>Call for a drop of 1 Thrumbo Horn</description>
+    <minTitle>Freeholder</minTitle>
+    <faction>Empire</faction>
+    <permitPointCost>1</permitPointCost>
+    <uiPosition>(6,0)</uiPosition>
+    <royalAid>
+      <itemsToDrop>
+		<ThrumboHorn>1</ThrumboHorn>
+      </itemsToDrop>
+      <favorCost>3</favorCost>
+    </royalAid>
+    <cooldownDays>10</cooldownDays>
+ </RoyalTitlePermitDef>
+ 
+<RoyalTitlePermitDef ParentName="DropResourcesBase">
+    <defName>ComponentIndustrialDrop</defName>
+    <label>Component drop</label>
+    <description>Call for a drop of 5 Components</description>
+    <minTitle>Yeoman</minTitle>
+    <faction>Empire</faction>
+    <permitPointCost>1</permitPointCost>
+    <uiPosition>(6,1)</uiPosition>
+    <royalAid>
+      <itemsToDrop>
+        <ComponentIndustrial>5</ComponentIndustrial>
+      </itemsToDrop>
+      <favorCost>2</favorCost>
+    </royalAid>
+    <cooldownDays>10</cooldownDays>
+ </RoyalTitlePermitDef> 
+ 
+<RoyalTitlePermitDef ParentName="DropResourcesBase">
+    <defName>ChemfuelDrop</defName>
+    <label>Chemfuel drop</label>
+    <description>Call for a drop of 300 Chemfuel</description>
+    <minTitle>Acolyte</minTitle>
+    <faction>Empire</faction>
+    <permitPointCost>1</permitPointCost>
+    <uiPosition>(6,2)</uiPosition>
+    <royalAid>
+      <itemsToDrop>
+        <Chemfuel>300</Chemfuel>
+      </itemsToDrop>
+      <favorCost>2</favorCost>
+    </royalAid>
+    <cooldownDays>10</cooldownDays>
+ </RoyalTitlePermitDef>
+ 
+<RoyalTitlePermitDef ParentName="DropResourcesBase">
+    <defName>NeutroamineDrop</defName>
+    <label>Neutroamine drop</label>
+    <description>Call for a drop of 200 Neutroamine</description>
+    <minTitle>Knight</minTitle>
+    <faction>Empire</faction>
+    <permitPointCost>1</permitPointCost>
+    <uiPosition>(6,3)</uiPosition>
+    <royalAid>
+      <itemsToDrop>
+		<Neutroamine>200</Neutroamine>
+      </itemsToDrop>
+      <favorCost>3</favorCost>
+    </royalAid>
+    <cooldownDays>10</cooldownDays>
+ </RoyalTitlePermitDef> 
+ 
+<RoyalTitlePermitDef ParentName="DropResourcesBase">
+    <defName>ComponentSpacerDrop</defName>
+    <label>Advanced Component drop</label>
+    <description>Call for a drop of 2 Advanced Component</description>
+    <minTitle>Praetor</minTitle>
+    <faction>Empire</faction>
+    <permitPointCost>1</permitPointCost>
+    <uiPosition>(6,4)</uiPosition>
+    <royalAid>
+      <itemsToDrop>
+        <ComponentSpacer>3</ComponentSpacer>		
+      </itemsToDrop>
+      <favorCost>5</favorCost>
+    </royalAid>
+    <cooldownDays>20</cooldownDays>
+ </RoyalTitlePermitDef>
+ 
+<RoyalTitlePermitDef ParentName="DropResourcesBase">
+    <defName>TechCoreDrop</defName>
+    <label>Techprof Subpersona Core drop</label>
+    <description>Call for a drop of 1 Tech Persona Core</description>
+    <minTitle>Baron</minTitle>
+    <faction>Empire</faction>
+    <permitPointCost>1</permitPointCost>
+    <uiPosition>(6,5)</uiPosition>
+    <royalAid>
+      <itemsToDrop>
+        <TechprofSubpersonaCore>1</TechprofSubpersonaCore>
+      </itemsToDrop>
+      <favorCost>8</favorCost>
+    </royalAid>
+    <cooldownDays>25</cooldownDays>
+ </RoyalTitlePermitDef> 
+ 
+<RoyalTitlePermitDef ParentName="DropResourcesBase">
+    <defName>AIPersonaCoreDrop</defName>
+    <label>AI Persona Core drop</label>
+    <description>Call for a drop of 1 AI Persona Core</description>
+    <minTitle>Count</minTitle>
+    <faction>Empire</faction>
+    <permitPointCost>1</permitPointCost>
+    <uiPosition>(6,6)</uiPosition>
+    <royalAid>
+      <itemsToDrop>
+		<AIPersonaCore>1</AIPersonaCore>
+      </itemsToDrop>
+      <favorCost>10</favorCost>
+    </royalAid>
+    <cooldownDays>30</cooldownDays>
+ </RoyalTitlePermitDef>
+ 
+<RoyalTitlePermitDef ParentName="DropResourcesBase">
+    <defName>SignalChip</defName>
+    <label>Signal Chip drop</label>
+    <description>Call for a drop of 1 Signal Chip</description>
+    <minTitle>Freeholder</minTitle>
+    <faction>Empire</faction>
+    <permitPointCost>1</permitPointCost>
+    <uiPosition>(7,0)</uiPosition>
+    <royalAid>
+      <itemsToDrop>
+		<SignalChip>1</SignalChip>
+      </itemsToDrop>
+      <favorCost>2</favorCost>
+    </royalAid>
+    <cooldownDays>10</cooldownDays>
+ </RoyalTitlePermitDef>
+ 
+<RoyalTitlePermitDef ParentName="DropResourcesBase">
+    <defName>SubcoreBasic</defName>
+    <label>Basic Subcore drop</label>
+    <description>Call for a drop of 1 Basic Subcore</description>
+    <minTitle>Yeoman</minTitle>
+    <faction>Empire</faction>
+    <permitPointCost>1</permitPointCost>
+    <uiPosition>(7,1)</uiPosition>
+    <royalAid>
+      <itemsToDrop>
+        <SubcoreBasic>1</SubcoreBasic>
+      </itemsToDrop>
+      <favorCost>2</favorCost>
+    </royalAid>
+    <cooldownDays>10</cooldownDays>
+ </RoyalTitlePermitDef> 
+ 
+<RoyalTitlePermitDef ParentName="DropResourcesBase">
+    <defName>HemogenPack</defName>
+    <label>HemogenPack drop</label>
+    <description>Call for a drop of 5 Hemogen Packs</description>
+    <minTitle>Acolyte</minTitle>
+    <faction>Empire</faction>
+    <permitPointCost>1</permitPointCost>
+    <uiPosition>(7,2)</uiPosition>
+    <royalAid>
+      <itemsToDrop>
+        <HemogenPack>5</HemogenPack>
+      </itemsToDrop>
+      <favorCost>2</favorCost>
+    </royalAid>
+    <cooldownDays>10</cooldownDays>
+ </RoyalTitlePermitDef>
+ 
+<RoyalTitlePermitDef ParentName="DropResourcesBase">
+    <defName>SubcoreRegular</defName>
+    <label>Regular Subcore drop</label>
+    <description>Call for a drop of 1 Regular Subcore</description>
+    <minTitle>Knight</minTitle>
+    <faction>Empire</faction>
+    <permitPointCost>1</permitPointCost>
+    <uiPosition>(7,3)</uiPosition>
+    <royalAid>
+      <itemsToDrop>
+		<SubcoreRegular>1</SubcoreRegular>
+      </itemsToDrop>
+      <favorCost>3</favorCost>
+    </royalAid>
+    <cooldownDays>20</cooldownDays>
+ </RoyalTitlePermitDef> 
+ 
+<RoyalTitlePermitDef ParentName="DropResourcesBase">
+    <defName>DeathrestCapacitySerum</defName>
+    <label>Deathrest Serum drop</label>
+    <description>Call for a drop of 1 Deathrest Capacity Serum</description>
+    <minTitle>Praetor</minTitle>
+    <faction>Empire</faction>
+    <permitPointCost>1</permitPointCost>
+    <uiPosition>(7,4)</uiPosition>
+    <royalAid>
+      <itemsToDrop>
+        <DeathrestCapacitySerum>1</DeathrestCapacitySerum>		
+      </itemsToDrop>
+      <favorCost>5</favorCost>
+    </royalAid>
+    <cooldownDays>25</cooldownDays>
+ </RoyalTitlePermitDef>
+ 
+<RoyalTitlePermitDef ParentName="DropResourcesBase">
+    <defName>SubcoreHigh</defName>
+    <label>Large Core drop</label>
+    <description>Call for a drop of 1 High Subcore</description>
+    <minTitle>Baron</minTitle>
+    <faction>Empire</faction>
+    <permitPointCost>1</permitPointCost>
+    <uiPosition>(7,5)</uiPosition>
+    <royalAid>
+      <itemsToDrop>
+        <SubcoreHigh>1</SubcoreHigh>
+      </itemsToDrop>
+      <favorCost>8</favorCost>
+    </royalAid>
+    <cooldownDays>25</cooldownDays>
+ </RoyalTitlePermitDef> 
+ 
+<RoyalTitlePermitDef ParentName="DropResourcesBase">
+    <defName>ArchiteCapsule</defName>
+    <label>Archite Capsule drop</label>
+    <description>Call for a drop of 1 Archite Capsule</description>
+    <minTitle>Count</minTitle>
+    <faction>Empire</faction>
+    <permitPointCost>1</permitPointCost>
+    <uiPosition>(7,6)</uiPosition>
+    <royalAid>
+      <itemsToDrop>
+		<ArchiteCapsule>1</ArchiteCapsule>
+      </itemsToDrop>
+      <favorCost>10</favorCost>
+    </royalAid>
+    <cooldownDays>30</cooldownDays>
+ </RoyalTitlePermitDef>
+ 
+<RoyalTitlePermitDef ParentName="DropResourcesBase">
+    <defName>Gun_Revolver</defName>
+    <label>Revolver drop</label>
+    <description>Call for a drop of 1 Revolver</description>
+    <minTitle>Freeholder</minTitle>
+    <faction>Empire</faction>
+    <permitPointCost>1</permitPointCost>
+    <uiPosition>(8,0)</uiPosition>
+    <royalAid>
+      <itemsToDrop>
+		<Gun_Revolver>1</Gun_Revolver>
+      </itemsToDrop>
+      <favorCost>2</favorCost>
+    </royalAid>
+    <cooldownDays>10</cooldownDays>
+ </RoyalTitlePermitDef>
+ 
+<RoyalTitlePermitDef ParentName="DropResourcesBase">
+    <defName>Apparel_FlakVest</defName>
+    <label>Flak Vest drop</label>
+    <description>Call for a drop of 1 Flak Vest</description>
+    <minTitle>Yeoman</minTitle>
+    <faction>Empire</faction>
+    <permitPointCost>1</permitPointCost>
+    <uiPosition>(8,1)</uiPosition>
+    <royalAid>
+      <itemsToDrop>
+        <Apparel_FlakVest>1</Apparel_FlakVest>
+      </itemsToDrop>
+      <favorCost>2</favorCost>
+    </royalAid>
+    <cooldownDays>15</cooldownDays>
+ </RoyalTitlePermitDef> 
+ 
+<RoyalTitlePermitDef ParentName="DropResourcesBase">
+    <defName>Apparel_AdvancedHelmet</defName>
+    <label>Flak Helmet drop</label>
+    <description>Call for a drop of 1 Flak Helmet</description>
+    <minTitle>Acolyte</minTitle>
+    <faction>Empire</faction>
+    <permitPointCost>1</permitPointCost>
+    <uiPosition>(8,2)</uiPosition>
+    <royalAid>
+      <itemsToDrop>
+        <Apparel_AdvancedHelmet>1</Apparel_AdvancedHelmet>
+      </itemsToDrop>
+      <favorCost>2</favorCost>
+    </royalAid>
+    <cooldownDays>20</cooldownDays>
+ </RoyalTitlePermitDef>
+ 
+<RoyalTitlePermitDef ParentName="DropResourcesBase">
+    <defName>Gun_ChainShotgun</defName>
+    <label>Chain Shotgun drop</label>
+    <description>Call for a drop of 1 Chain Shotgun</description>
+    <minTitle>Knight</minTitle>
+    <faction>Empire</faction>
+    <permitPointCost>1</permitPointCost>
+    <uiPosition>(8,3)</uiPosition>
+    <royalAid>
+      <itemsToDrop>
+		<Gun_ChainShotgun>1</Gun_ChainShotgun>
+      </itemsToDrop>
+      <favorCost>3</favorCost>
+    </royalAid>
+    <cooldownDays>25</cooldownDays>
+ </RoyalTitlePermitDef> 
+ 
+<RoyalTitlePermitDef ParentName="DropResourcesBase">
+    <defName>Apparel_FlakJacket</defName>
+    <label>Flak Jacket drop</label>
+    <description>Call for a drop of 1 Flak Jacket</description>
+    <minTitle>Praetor</minTitle>
+    <faction>Empire</faction>
+    <permitPointCost>1</permitPointCost>
+    <uiPosition>(8,4)</uiPosition>
+    <royalAid>
+      <itemsToDrop>
+        <Apparel_FlakJacket>1</Apparel_FlakJacket>		
+      </itemsToDrop>
+      <favorCost>5</favorCost>
+    </royalAid>
+    <cooldownDays>25</cooldownDays>
+ </RoyalTitlePermitDef>
+ 
+<RoyalTitlePermitDef ParentName="DropResourcesBase">
+    <defName>Gun_ChargeRifle</defName>
+    <label>Charge Rifle drop</label>
+    <description>Call for a drop of 1 Charge Rifle</description>
+    <minTitle>Baron</minTitle>
+    <faction>Empire</faction>
+    <permitPointCost>1</permitPointCost>
+    <uiPosition>(8,5)</uiPosition>
+    <royalAid>
+      <itemsToDrop>
+        <Gun_ChargeRifle>1</Gun_ChargeRifle>
+      </itemsToDrop>
+      <favorCost>8</favorCost>
+    </royalAid>
+    <cooldownDays>30</cooldownDays>
+ </RoyalTitlePermitDef> 
+ 
+<RoyalTitlePermitDef ParentName="DropResourcesBase">
+    <defName>OrbitalTargeterBombardment</defName>
+    <label>Orbital Targeter drop</label>
+    <description>Call for a drop of 1 Orbital Bombardment Targeter</description>
+    <minTitle>Count</minTitle>
+    <faction>Empire</faction>
+    <permitPointCost>1</permitPointCost>
+    <uiPosition>(8,6)</uiPosition>
+    <royalAid>
+      <itemsToDrop>
+		<OrbitalTargeterBombardment>1</OrbitalTargeterBombardment>
+      </itemsToDrop>
+      <favorCost>10</favorCost>
+    </royalAid>
+    <cooldownDays>45</cooldownDays>
+ </RoyalTitlePermitDef>
+  
+</Defs>
